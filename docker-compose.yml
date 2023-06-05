@@ -4,7 +4,7 @@ services:
 
   web:
     image: php:7.2-apache
-    container_name: php-z
+    container_name: php-request
     restart: unless-stopped
     command: >
       bash -c "a2enmod rewrite

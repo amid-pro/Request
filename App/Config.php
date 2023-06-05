@@ -25,8 +25,8 @@ class Config
                 $string = trim($string);
 
                 if ($string != "") {
-                    list($key, $value) = explode("=", $string);
-                    putenv(trim($key) . "=" . trim($value));
+                    $parts = mb_split('\=', $string, 2);
+                    putenv(trim($parts[0]) . "=" . trim($parts[1]));
                 }
             }
 
