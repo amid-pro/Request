@@ -99,8 +99,8 @@
                         <hr />
                         <div v-if="url !== ''" class="output_div url">{{ url }}</div>
                         <div v-if="error !== ''" class="output_div error">{{ error }}</div>
-                        <div v-if="result !== ''" class="output_div">{{ result }}</div>
                         <div v-if="info !== ''" class="output_div info">{{ info }}</div>
+                        <div v-if="result !== ''" class="output_div">{{ result }}</div>
                     </div>
 
                 </div>
